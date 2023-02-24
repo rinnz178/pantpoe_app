@@ -1,0 +1,182 @@
+/** @format */
+
+.profile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.profile+label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: #cccccc;
+    display: inline-block;
+}
+
+
+/* .profile:focus + label,
+.profile + label:hover {
+	background-image: url(../assets/camera.png);
+	background-color: #cccccc;
+	background-size: 120px;
+	height: 120px;
+	width: 120px;
+    border-radius: 50%;
+} */
+
+.profile+label {
+    cursor: pointer;
+    /* "hand" cursor */
+}
+
+.profile:focus+label {
+    outline: 1px dotted #cccccc;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.show-profile {
+    background-image: url(images/camera.png);
+    background-color: #cccccc;
+    background-size: 150px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    /* background-color: #008CBA; */
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.2s ease;
+}
+
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.upload {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    width: 200px;
+    top: 60%;
+    left: 77px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.circle-img {
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+}
+
+.cover-photo {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.cover-photo+label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+
+.cover-photo:focus+label,
+.cover-photo+label:hover {
+    background-image: url(images/camera.png);
+    background-color: #cccccc;
+    background-size: 120px;
+    height: 220px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.cover-photo+label {
+    cursor: pointer;
+    /* "hand" cursor */
+}
+
+.cover-photo:focus+label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.show-cover-photo {
+    height: 220px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.show-cover-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.input-label {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.input-required {
+    color: rgb(112, 108, 100);
+}
+
+.subtitle {
+    font-size: 14px !important;
+    color: rgb(112, 108, 100);
+}
+
+.add-now-link {
+    color: rgb(51, 149, 255) !important;
+}
+
+.gray-link {
+    font-size: 14px;
+    color: rgb(112, 108, 100) !important;
+}
+
+.blue-link {
+    font-size: 14px;
+    color: rgb(51, 149, 255) !important;
+}
+
+.invalid {
+    color: red;
+}
+
+.react-tel-input {
+    margin: 2px !important;
+    margin-bottom: 8px !important;
+}

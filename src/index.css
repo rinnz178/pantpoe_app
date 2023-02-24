@@ -1,0 +1,195 @@
+/** @format */
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.my-facebook-button-class {
+    color: yellow;
+    background: rgb(51, 149, 255);
+    background: linear-gradient( 0deg, rgba(51, 149, 255, 1) 0%, rgba(3, 224, 255, 1) 100%);
+    borderradius: 50px;
+    border: 0;
+    color: white;
+    height: 48;
+    padding: 0 30px;
+}
+
+.form-control {
+    background-color: #fff !important;
+    color: #333;
+    height: 55px !important;
+    width: 100% !important;
+}
+
+.react-tel-input {
+    margin: 30px auto !important;
+}
+
+.flag-dropdown {
+    background-color: #fff !important;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.FaintBox {
+    border: 1px solid rgb(229, 227, 221);
+    border-radius: 4px;
+}
+
+
+/* start here for imagegrird */
+
+grid-container {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100% !important;
+}
+
+.container * {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.col-md-4 {
+    width: 33.33333333%;
+}
+
+.border {
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.background {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.height-one {
+    width: 100%;
+    padding-top: 100%;
+}
+
+.height-two {
+    width: 50%;
+    padding-top: 50%;
+}
+
+.height-three {
+    width: 33.3333%;
+    padding-top: 33.3333%;
+}
+
+.cover {
+    background-color: #222;
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 6px;
+}
+
+.cover-text {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    font-size: 23px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    text-align: center;
+}
+
+.cover-text>p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide {
+    height: 0;
+    bottom: 100%;
+    transition: 0.5s ease;
+    overflow: hidden;
+    font-size: 3%;
+}
+
+.border:hover .slide {
+    bottom: 0;
+    height: auto;
+}
+
+.border:hover .animate-text {
+    top: 62%;
+}
+
+.imgDiv {
+    position: relative;
+    display: inline-block;
+}
+
+.imgDiv:hover:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    background: url("assets/Edit.png") center no-repeat;
+    background-size: 50px;
+}
+
+.imgDiv:hover img {
+    opacity: 0.4;
+}
+
+.error-msg {
+    color: red;
+}
+
+.postcontainer {
+    height: 100vh;
+}
+
+.scrollhost::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollhost {
+    overflow: auto;
+    height: calc(100vh - 20px);
+    scrollbarwidth: none;
+    -ms-overflow-style: none;
+}
+
+.scrollhostsearch {
+    overflow: auto;
+    height: calc(60vh - 20px);
+    scrollbarwidth: none;
+    -ms-overflow-style: none;
+}

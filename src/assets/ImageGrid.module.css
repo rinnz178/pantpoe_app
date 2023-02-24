@@ -1,0 +1,184 @@
+/* .gridContaier{
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+.border{
+  border: 2px solid white;
+  border-radius: 6px;
+  position: relative;
+}
+.photo{
+  width: 100%;
+  height: auto;
+}
+.firstDiv{
+  height: auto;
+}
+
+.modelthree{
+  width: 100%;
+  padding-top: 33.33%;
+  height: 80px;
+}
+
+.background{
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+
+
+.coverText {
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: white;
+  font-size: 7%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  text-align: center;
+}
+
+.coverText > p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slide {
+  height: 0;
+  bottom: 100%;
+  transition: .5s ease;
+  overflow: hidden;
+  font-size: 3%;
+}
+
+.border:hover .slide  {
+  bottom: 0;
+ 
+}
+
+.border:hover .animate-text  {
+  top: 62%
+}
+
+.firstChild{
+   display: 'flex';
+  align-self: 'stretch';
+}
+
+@media screen and (min-width: 480px) {
+ .firstChild{
+   display: 'flex';
+  align-self: 'stretch';
+  height: 200px;
+}
+} */
+
+
+
+.imgGrid{
+  --gap:16px;
+  --num-cols:3;
+  --row-height:20vh;
+  box-sizing: border-box;
+  padding: var(--gap);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols),1fr);
+  grid-auto-rows: var(--row-height);
+  gap:var(--gap);
+  padding:0;
+  margin-bottom: 16px;
+}
+
+
+
+.imgGrid div{
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.cover {
+  background-color: #222;
+  opacity: 0.8;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+
+
+.imgGridcol2{
+  grid-column: span 2;
+}
+
+.imgGridrow2{
+  grid-row: span 2;
+}
+
+.cover {
+  background-color: #222;
+  opacity: 0.8;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+}
+
+.coverText {
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: white;
+  font-size: 7%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  text-align: center;
+}
+
+.coverText > p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width: 480px) {
+  .imgGridcol2{
+  grid-column: span 1;
+}
+
+.imgGridrow2{
+  grid-row: span 1;
+}
+.imgGrid{
+   --num-cols:1;
+  --row-height:20vh;
+}
+} 
+
+

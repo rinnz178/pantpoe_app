@@ -1,0 +1,194 @@
+
+.audioContainer{
+  display: flex;
+  border: 1px solid rgb(229,221,221);
+  border-radius: 8px;
+  justify-content: space-around;
+  max-width: 400px;
+  height: 120px;
+  padding: 0px 20px 0px 0px;
+}
+.logo{
+     background-repeat: repeat-x;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    border-radius: 8px 0px 0px 8px;
+    background-image: url('https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/06/music-logo-design.jpg');
+    border-right: 1px solid rgb(229,221,221);
+}
+
+
+.audioDiv{
+  display: flex;
+  align-items: center;
+}
+
+.audioPlayer{
+  --primary:#fff;
+  --secondary:#333;
+  --alpha:#3498db;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.audioOptions{
+  display: flex;
+  align-items: center;
+}
+
+.showprograssbar{
+  display: flex;
+  align-items: center;
+  width:auto;
+}
+.range{
+  margin:0px 8px;
+}
+
+
+
+.forwardBackward{
+  background: none;
+  border:none;
+  align-items: center;
+  font-family: monospace;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.forwardBackward:hover{
+  color:var(--alpha);
+}
+.playPause{
+  background:var(--primary);
+  border-radius: 50%;
+  width:45px;
+  height:45px;
+  font-size: 20px ;
+  display: flex;
+  color: var(--secondary);
+  justify-content: center;
+  align-items: center;
+}
+
+.play{
+  position: relative;
+  left: 2px;
+}
+
+.currentTime,.duration{
+  font-size: 16px;
+  font-family: monospace;
+
+}
+
+.currentTime{
+  margin-left: 25px;
+}
+.progressBar {
+  --bar-bg: #B8B8B8;
+  --seek-before-width: 0;
+  --seek-before-color: #888888;
+  --knobby: #3452a5;
+  --selectedKnobby: #26c9c3;
+
+  appearance: none;
+  background: var(--bar-bg);;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 11px;
+  outline: none;
+}
+
+/* progress bar - safari */
+.progressBar::-webkit-slider-runnable-track {
+  background: var(--bar-bg);;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 11px;
+  outline: none;
+}
+
+/* progress bar - firefox */
+.progressBar::-moz-range-track {
+  background: var(--bar-bg);;
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 11px;
+  outline: none;
+}
+
+.progressBar::-moz-focus-outer {
+  border: 0;
+}
+
+/* progress bar - chrome and safari */
+.progressBar::before {
+  content: '';
+  height: 11px;
+  width: var(--seek-before-width);
+  background-color: var(--seek-before-color);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* progress bar - firefox */
+.progressBar::-moz-range-progress {
+  background-color: var(--seek-before-color);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 11px;
+}
+
+/* knobby - chrome and safari */
+.progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--knobby);
+  cursor: pointer;
+  position: relative;
+  margin: -2px 0 0 0;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+/* knobby while dragging - chrome and safari */
+.progressBar:active::-webkit-slider-thumb {
+  transform: scale(1.2);
+  background: var(--selectedKnobby);
+}
+
+/* knobby - firefox */
+.progressBar::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: transparent;
+  background-color: var(--knobby);
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+/* knobby while dragging - firefox */
+.progressBar:active::-moz-range-thumb {
+  transform: scale(1.2);
+  background: var(--selectedKnobby);
+}

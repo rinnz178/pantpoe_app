@@ -1,0 +1,12 @@
+.wrapper{
+    height: 65vh;
+   margin: auto;
+   margin-top: 20vh;
+}
+.card {
+    background-color: rgba(240, 240, 240, 0.963);
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #c0c0c0 ; 
+}

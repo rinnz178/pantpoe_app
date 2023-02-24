@@ -1,0 +1,28 @@
+.postInfo {
+    text-align: start;
+    margin-top: 20px;
+  }
+.postDetail{
+    position: relative;
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+
+  .shade{
+    position: absolute;
+    bottom: 0;
+    height: 5rem;
+    width: 100%;
+    background-color:
+      'linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%)';
+  }
+
+  .readmore{
+    text-decoration: none;
+    color:#3498db;
+  
+  }
+
+ .readmore:hover  {
+    background-color: black;
+  }
